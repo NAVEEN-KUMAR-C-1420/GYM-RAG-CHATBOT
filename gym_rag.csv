@@ -1,0 +1,51 @@
+gym_id,gym_name,location,membership_type,monthly_fee_inr,personal_training_fee_inr,diet_plan,recommended_workout,trainer_level,opening_time,closing_time,has_cardio_section,has_weightlifting_section,has_group_classes,rating
+1,Core Strength Studio,Mumbai,Half-Yearly,3299,8611,Balanced Diet,Push Pull Legs,Advanced,6:00 AM,9:00 PM,No,Yes,No,3.7
+2,Elite Muscle Club,Bangalore,Quarterly,3681,5493,Balanced Diet,Push Pull Legs,Advanced,6:00 AM,11:00 PM,No,Yes,Yes,3.9
+3,PowerFit Gym,Delhi,Monthly,3361,5964,High Protein,Upper Lower Split,Advanced,6:00 AM,11:00 PM,No,No,Yes,4.7
+4,Flex Arena,Delhi,Quarterly,2321,9786,Weight Loss,Bodybuilding,Intermediate,6:00 AM,11:00 PM,Yes,Yes,No,4.7
+5,Beast Mode Fitness,Delhi,Quarterly,1211,8926,Low Carb,CrossFit,Intermediate,5:00 AM,11:00 PM,No,No,Yes,4.3
+6,PowerFit Gym,Chennai,Yearly,4936,4506,Balanced Diet,Upper Lower Split,Advanced,5:00 AM,11:00 PM,No,Yes,No,4.3
+7,Flex Arena,Hyderabad,Yearly,2286,10671,Low Carb,CrossFit,Beginner,5:00 AM,9:00 PM,Yes,No,Yes,4.5
+8,Iron Temple,Hyderabad,Yearly,2752,9094,Low Carb,Upper Lower Split,Advanced,5:00 AM,10:00 PM,Yes,No,No,4.9
+9,Titan Fitness,Hyderabad,Half-Yearly,4340,11027,Keto,Cardio + Strength,Beginner,6:00 AM,10:00 PM,No,No,No,4.9
+10,Beast Mode Fitness,Hyderabad,Half-Yearly,3542,6360,Muscle Gain,Cardio + Strength,Advanced,5:00 AM,10:00 PM,No,No,No,4.5
+11,Core Strength Studio,Bangalore,Quarterly,2733,8537,Keto,Full Body,Intermediate,6:00 AM,11:00 PM,Yes,Yes,No,4.1
+12,Iron Temple,Mumbai,Half-Yearly,4425,7648,Weight Loss,Full Body,Advanced,5:00 AM,9:00 PM,Yes,No,No,4.4
+13,Core Strength Studio,Delhi,Monthly,1818,11046,Balanced Diet,Push Pull Legs,Advanced,6:00 AM,10:00 PM,Yes,Yes,No,4.7
+14,PowerFit Gym,Hyderabad,Yearly,4062,3096,Balanced Diet,Push Pull Legs,Advanced,6:00 AM,9:00 PM,No,No,No,3.6
+15,StrongLife Gym,Bangalore,Monthly,1773,8908,Balanced Diet,Push Pull Legs,Advanced,6:00 AM,10:00 PM,No,Yes,Yes,4.5
+16,StrongLife Gym,Mumbai,Half-Yearly,2158,11832,Weight Loss,Upper Lower Split,Advanced,6:00 AM,11:00 PM,No,No,No,4.2
+17,Flex Arena,Bangalore,Yearly,1108,11736,High Protein,Full Body,Advanced,5:00 AM,10:00 PM,Yes,Yes,Yes,4.0
+18,PowerFit Gym,Hyderabad,Yearly,4214,11292,Low Carb,Full Body,Advanced,6:00 AM,9:00 PM,No,Yes,No,4.0
+19,Core Strength Studio,Hyderabad,Half-Yearly,3018,6673,Muscle Gain,Push Pull Legs,Advanced,5:00 AM,9:00 PM,Yes,Yes,No,3.9
+20,Elite Muscle Club,Chennai,Half-Yearly,2953,5436,Low Carb,Bodybuilding,Intermediate,5:00 AM,11:00 PM,No,Yes,Yes,4.4
+21,Flex Arena,Chennai,Monthly,2052,5830,Muscle Gain,HIIT,Advanced,5:00 AM,9:00 PM,No,Yes,No,3.8
+22,Core Strength Studio,Delhi,Half-Yearly,4494,3314,High Protein,Upper Lower Split,Intermediate,5:00 AM,9:00 PM,Yes,No,No,4.7
+23,Flex Arena,Chennai,Yearly,3075,3603,High Protein,Upper Lower Split,Beginner,6:00 AM,11:00 PM,Yes,Yes,Yes,4.1
+24,Elite Muscle Club,Delhi,Yearly,4326,11171,High Protein,CrossFit,Beginner,6:00 AM,10:00 PM,Yes,Yes,No,3.7
+25,Elite Muscle Club,Chennai,Half-Yearly,2082,7552,High Protein,Bodybuilding,Intermediate,5:00 AM,9:00 PM,No,Yes,No,4.1
+26,Flex Arena,Mumbai,Yearly,3550,7402,Muscle Gain,Cardio + Strength,Intermediate,6:00 AM,10:00 PM,Yes,No,Yes,4.6
+27,Core Strength Studio,Delhi,Half-Yearly,4280,3800,Low Carb,Push Pull Legs,Intermediate,5:00 AM,10:00 PM,No,Yes,No,4.1
+28,Flex Arena,Delhi,Yearly,4930,8027,Keto,Push Pull Legs,Beginner,6:00 AM,9:00 PM,Yes,Yes,Yes,3.9
+29,FitZone,Delhi,Yearly,3083,9465,Keto,Bodybuilding,Beginner,6:00 AM,10:00 PM,Yes,No,Yes,4.3
+30,Iron Temple,Bangalore,Quarterly,4487,9493,High Protein,Push Pull Legs,Advanced,6:00 AM,11:00 PM,Yes,Yes,Yes,4.6
+31,FitZone,Bangalore,Monthly,1944,7124,Balanced Diet,Push Pull Legs,Intermediate,6:00 AM,10:00 PM,No,Yes,Yes,3.5
+32,PowerFit Gym,Hyderabad,Monthly,4054,5333,High Protein,Upper Lower Split,Beginner,5:00 AM,11:00 PM,Yes,No,No,4.4
+33,Flex Arena,Hyderabad,Monthly,1734,9880,Balanced Diet,Full Body,Intermediate,6:00 AM,10:00 PM,No,No,No,4.4
+34,Core Strength Studio,Bangalore,Monthly,2750,9068,Keto,Upper Lower Split,Advanced,5:00 AM,11:00 PM,No,Yes,No,4.3
+35,Titan Fitness,Chennai,Quarterly,2671,5415,Keto,Bodybuilding,Beginner,6:00 AM,9:00 PM,Yes,Yes,Yes,3.6
+36,Core Strength Studio,Hyderabad,Monthly,4804,9473,Weight Loss,Upper Lower Split,Beginner,6:00 AM,9:00 PM,Yes,No,No,4.5
+37,Elite Muscle Club,Hyderabad,Yearly,1689,7906,Weight Loss,CrossFit,Beginner,5:00 AM,9:00 PM,Yes,No,Yes,4.2
+38,Alpha Gym,Chennai,Monthly,2850,11278,Muscle Gain,Upper Lower Split,Advanced,5:00 AM,9:00 PM,Yes,Yes,No,4.2
+39,Core Strength Studio,Chennai,Half-Yearly,2577,7767,High Protein,CrossFit,Advanced,6:00 AM,9:00 PM,No,Yes,Yes,3.6
+40,Beast Mode Fitness,Mumbai,Quarterly,2421,11577,Weight Loss,Bodybuilding,Intermediate,6:00 AM,10:00 PM,Yes,Yes,No,4.8
+41,Alpha Gym,Bangalore,Half-Yearly,1631,4157,Low Carb,Upper Lower Split,Intermediate,6:00 AM,9:00 PM,Yes,No,Yes,5.0
+42,Flex Arena,Mumbai,Quarterly,3979,5246,Balanced Diet,HIIT,Advanced,5:00 AM,11:00 PM,Yes,Yes,No,4.9
+43,FitZone,Hyderabad,Quarterly,1890,7678,Keto,CrossFit,Intermediate,6:00 AM,9:00 PM,No,Yes,Yes,4.9
+44,Beast Mode Fitness,Chennai,Yearly,4250,10438,Balanced Diet,Bodybuilding,Advanced,5:00 AM,10:00 PM,No,Yes,Yes,4.7
+45,Alpha Gym,Chennai,Half-Yearly,4864,5271,Low Carb,Push Pull Legs,Advanced,5:00 AM,11:00 PM,Yes,No,No,4.6
+46,Iron Temple,Chennai,Quarterly,4368,5476,Low Carb,Full Body,Intermediate,5:00 AM,10:00 PM,No,No,Yes,4.0
+47,PowerFit Gym,Delhi,Monthly,1407,6604,Balanced Diet,Bodybuilding,Intermediate,6:00 AM,10:00 PM,No,Yes,No,4.5
+48,Iron Temple,Hyderabad,Yearly,2311,10548,Low Carb,Upper Lower Split,Beginner,5:00 AM,11:00 PM,Yes,No,Yes,4.8
+49,StrongLife Gym,Delhi,Yearly,3979,5758,Balanced Diet,HIIT,Advanced,6:00 AM,9:00 PM,No,Yes,Yes,4.0
+50,Beast Mode Fitness,Delhi,Quarterly,1304,8665,Weight Loss,Cardio + Strength,Intermediate,6:00 AM,11:00 PM,Yes,Yes,No,4.3

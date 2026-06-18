@@ -1,0 +1,8 @@
+langchain
+langchain-ollama
+langchain-core
+langchain_chroma
+chromadb
+pandas
+ollama
+faiss-cpu
