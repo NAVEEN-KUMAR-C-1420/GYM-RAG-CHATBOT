@@ -1,51 +1,28 @@
 from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
-from langchain_core.documents import Document
+from langchain_community.document_loaders import CSVLoader
 import os
-import pandas as pd
 
-df=pd.read_csv("gym_rag.csv")
+DB_DIR = "./chroma_langchain_db"
 
-Embeddings=OllamaEmbeddings(model="nomic-embed-text-v2-moe:latest")
+embeddings = OllamaEmbeddings(model="nomic-embed-text-v2-moe:latest")
 
-db_loc="./chroma_langchain_db"
-add_doc=not os.path.exists(db_loc)
+if os.path.exists(DB_DIR):
+    print("Loading existing vector database...")
+    vectorstore = Chroma(
+        persist_directory=DB_DIR,
+        embedding_function=embeddings,
+        collection_name="gym_rag"
+    )
+else:
+    print("Database not found. Creating and embedding documents now (this may take a minute)...")
+    loader = CSVLoader("gym_rag.csv")
+    documents = loader.load()
+    vectorstore = Chroma.from_documents(
+        documents=documents,
+        embedding=embeddings,
+        persist_directory=DB_DIR,
+        collection_name="gym_rag"
+    )
 
-if add_doc:
-    documents = []
-    ids = []
-    for i, row in df.iterrows():
-        document = Document(
-            page_content=f"""
-            Gym Name: {row["gym_name"]}
-            Location: {row["location"]}
-            Membership: {row["membership_type"]}
-            Monthly Fee: {row["monthly_fee_inr"]}
-            Personal Training Fee: {row["personal_training_fee_inr"]}
-            Diet Plan: {row["diet_plan"]}
-            Workout: {row["recommended_workout"]}
-            Trainer Level: {row["trainer_level"]}
-            Rating: {row["rating"]}
-            """,
-            metadata={
-                "gym_id": row["gym_id"],
-                "location": row["location"],
-                "diet_plan": row["diet_plan"],
-                "workout": row["recommended_workout"],
-                "rating": row["rating"]
-            },
-            id=str(i)
-        )
-        ids.append(str(i))
-        documents.append(document) 
-
-vectorstore=Chroma(
-    collection_name="gym_collection",
-    embedding_function=Embeddings,
-    persist_directory=db_loc
-)
-
-if add_doc:
-    vectorstore.add_documents(documents, ids=ids)
-
-retriver=vectorstore.as_retriever(search_kwargs={"k":5})
+retriver = vectorstore.as_retriever(search_kwargs={"k": 5})

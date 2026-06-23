@@ -16,17 +16,21 @@ chain= prompt | model
 
 def conversation():
     print("Welcome to GYM FREAKS type 'exit' to end the conversation")
+    chat_memory = "" 
     while True:
-        memory=""
-        user_input=input("Enter your queries:")
-        if user_input.lower()=="exit":
+        user_input = input("\nEnter your queries: ")
+        if user_input.lower() == "exit":
             print("Goodbye!")
             break
-        context=retriver.invoke(user_input)
-        res=chain.invoke({"memory":memory,"data":context,"input":user_input})
-        print(res)
-        memory+=f"user:{user_input}\nAI:{res}\n"
-    print(memory)
+        context = retriver.invoke(user_input)
+        res = chain.invoke({
+            "memory": chat_memory, 
+            "data": context, 
+            "input": user_input
+        })
+        print("\nAI:", res)
+        chat_memory += f"User: {user_input}\nAI: {res}\n"
     
 if __name__=="__main__":
     conversation()
+    
