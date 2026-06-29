@@ -1,6 +1,6 @@
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
-from vector import retriver 
+from vector import retriever 
 
 template="""
 Your an expert in GYM and fitness. You are a helpful assistant that provides accurate and concise answers to questions related to GYM and fitness.
@@ -22,7 +22,7 @@ def conversation():
         if user_input.lower() == "exit":
             print("Goodbye!")
             break
-        context = retriver.invoke(user_input)
+        context = retriever.invoke(user_input)
         res = chain.invoke({
             "memory": chat_memory, 
             "data": context, 

@@ -7,14 +7,7 @@ DB_DIR = "./chroma_langchain_db"
 
 embeddings = OllamaEmbeddings(model="nomic-embed-text-v2-moe:latest")
 
-if os.path.exists(DB_DIR):
-    print("Loading existing vector database...")
-    vectorstore = Chroma(
-        persist_directory=DB_DIR,
-        embedding_function=embeddings,
-        collection_name="gym_rag"
-    )
-else:
+if not os.path.exists(DB_DIR):
     print("Database not found. Creating and embedding documents now (this may take a minute)...")
     loader = CSVLoader("gym_rag.csv")
     documents = loader.load()
@@ -25,4 +18,10 @@ else:
         collection_name="gym_rag"
     )
 
-retriver = vectorstore.as_retriever(search_kwargs={"k": 5})
+print("Loading existing vector database...")
+vectorstore = Chroma(
+    persist_directory=DB_DIR,
+    embedding_function=embeddings,
+    collection_name="gym_rag"
+)
+retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
